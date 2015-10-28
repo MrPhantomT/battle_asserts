@@ -17,7 +17,7 @@
             (shuffled-balanced-permutation []
                                            (s/join (shuffle (seq (balanced-permutation)))))
             (balanced-permutation []
-                                  (loop [n (inc (rand-int 10)) result ""]
+                                  (loop [n (+ (rand-int 15) 4) result ""]
                                     (if (>= (count result) n)
                                       result
                                       (recur n
